@@ -1,0 +1,12 @@
+<!-- En tu ContributionPage.xaml -->
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp9.Views.ContributionPage"
+             Title="ContributionPage">
+    <VerticalStackLayout>
+        <Label 
+            x:Name="NumberOfDinersLabel"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+    </VerticalStackLayout>
+</ContentPage>
