@@ -12,14 +12,13 @@ namespace MauiApp9.ViewModels
         public event PropertyChangedEventHandler PropertyChanged;
 
         private CalculadoraPropina calculadoraPropina;
-        private ContributionViewModel contributionViewModel;
+        
 
 
         public MainViewModel()
         {
             calculadoraPropina = new CalculadoraPropina();
-            contributionViewModel = new ContributionViewModel();
-            contributionViewModel.UpdateNumberOfDiners(NumeroPersonas);
+    
 
 
         }
@@ -35,7 +34,7 @@ namespace MauiApp9.ViewModels
                     numeroPersonas = value;
                     OnPropertyChanged(nameof(NumeroPersonas));
                     calculadoraPropina.NumeroPersonas = value;
-                    contributionViewModel.UpdateNumberOfDiners(value);
+                 
                 }
             }
         }

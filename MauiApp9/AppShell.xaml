@@ -14,10 +14,10 @@
          Route="MainPage" />
 
         <ShellContent
-         Title="Aportaciones"
-         ContentTemplate="{DataTemplate local:ContributionPage}"
-         Route="ContributionPage" />
-        
+         Title="Acerca de"
+         ContentTemplate="{DataTemplate local:AboutPage}"
+         Route="AboutPage" />
+
     </TabBar>
     
 

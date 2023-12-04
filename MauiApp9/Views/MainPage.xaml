@@ -4,8 +4,7 @@
              Title="Calculadora de Propinas">
 
     <StackLayout Padding="20" Spacing="15" VerticalOptions="Center" HorizontalOptions="Center">
-
-        <!-- Input para el importe de la cuenta con borde -->
+        
         <Frame BorderColor="Gray" Padding="5">
             <Entry Placeholder="Ingrese el importe de la cuenta" Keyboard="Numeric"
                Text="{Binding ImporteCuenta, Mode=TwoWay}" 
@@ -14,7 +13,7 @@
         </Frame>
         
 
-        <!-- Input para el número de personas -->
+
         <StackLayout Orientation="Horizontal" Spacing="10" VerticalOptions="Center" HorizontalOptions="Center">
             <Label Text="# Personas:" VerticalOptions="Center" FontSize="18" />
             <Label Text="{Binding NumeroPersonas}" VerticalOptions="Center" FontSize="18" />
@@ -22,7 +21,7 @@
             <Button Text="-" Command="{Binding DecrementarPersonasCommand}" FontSize="18" />
         </StackLayout>
 
-        <!-- Botones para porcentajes de propina -->
+
         <StackLayout Orientation="Horizontal" Spacing="10" VerticalOptions="Center" HorizontalOptions="Center">
             <Button Text="8%" Command="{Binding Aplicar8PorcientoCommand}" FontSize="18" />
             <Button Text="10%" Command="{Binding Aplicar10PorcientoCommand}" FontSize="18" />
@@ -30,13 +29,11 @@
             <Button Text="15%" Command="{Binding Aplicar15PorcientoCommand}" FontSize="18" />
         </StackLayout>
 
-        <!-- Botón para calcular y limpiar -->
         <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center" Spacing="10">
             <Button Text="Calcular" Command="{Binding CalcularCommand}" FontSize="18" />
             <Button Text="Limpiar" Command="{Binding LimpiarCommand}" FontSize="18" />
         </StackLayout>
 
-        <!-- Resultados -->
         <Label Text="{Binding Resultados}" VerticalOptions="Center"
                FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" />
     </StackLayout>
