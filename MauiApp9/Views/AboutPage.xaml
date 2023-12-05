@@ -3,18 +3,25 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp9.Views.AboutPage"
              Title="Acerca de">
-    <VerticalStackLayout>
+    <VerticalStackLayout
+        VerticalOptions="Center"
+        HorizontalOptions="Center">
+        
         <Label 
-            Text="Calculadora de Propinas"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+         Text="Calculadora de Propinas"
+            FontSize="Medium"
+         HorizontalOptions="Center"/>
+        
         <Label 
-         Text="Version 0.1"
-         VerticalOptions="Center" 
-         HorizontalOptions="Center" />
+         Text="{Binding ApiVersion}"
+         HorizontalOptions="Center"
+         FontSize="Small"/>
 
         <Button 
-            Text="Preferencias" />
+         Text="Preferencias" 
+         Margin="0,48,0,0"
+         HorizontalOptions="Center"
+         Command="{Binding OpenPreferencesCommand}"/>
 
 
     </VerticalStackLayout>
